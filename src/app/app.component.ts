@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MenuController,NavController } from '@ionic/angular';
+//import { Storage } from '@ionic/storage';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -14,5 +16,8 @@ export class AppComponent {
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+  constructor(
+    private nav: NavController) {}
+
+  
 }
